@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 // There will be four crystals displayed as buttons on the page.
  
+
 var crystal1, crystal2, crystal3, crystal4
 
 // The player will be shown a random number at the start of the game btwn 19-120
@@ -16,7 +17,8 @@ function randomNumber() {
 //onClick Event when crystal is clicked, no. of points is updated in html
 
 $("#ruby").click(function() {
-    console.log(Math.floor(Math.random() * 12) + 1); 
+    
+   (Math.floor(Math.random() * 12) + 1); 
 
 });
 
@@ -25,6 +27,7 @@ $("#ruby").click(function() {
 var targetNumber = randomNumber();
 $("#target").html(targetNumber);
 
+var totalScore
 
 
 // Your game will hide this amount until the player clicks a crystal.
@@ -37,6 +40,9 @@ $("#target").html(targetNumber);
 // The player wins if their total score matches the random number from the beginning of the game.
     //to win, number must match randomNumber at game start
 
+    function win () {
+
+    }
 // The player loses if their score goes above the random number.
     //if number is greater than randomNumber, player loses
 
@@ -45,9 +51,16 @@ $("#target").html(targetNumber);
 
 // When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
 
+var counter = 0;
+var wins = 0;
+var losses = 0;
+
     //setupnewRound - reset to 0, new randomNumber
 
 // The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+
+
+
 
     //gameObj to store new values
 
