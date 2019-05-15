@@ -16,9 +16,10 @@ function randomNumber() {
 
 //onClick Event when crystal is clicked, no. of points is updated in html
 
+
 $("#ruby").click(function() {
     
-   (Math.floor(Math.random() * 12) + 1); 
+   console.log((Math.floor(Math.random() * 12) + 1)); 
 
 });
 
@@ -27,7 +28,8 @@ $("#ruby").click(function() {
 var targetNumber = randomNumber();
 $("#target").html(targetNumber);
 
-var totalScore
+
+var playerScore =
 
 
 // Your game will hide this amount until the player clicks a crystal.
