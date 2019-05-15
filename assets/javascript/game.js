@@ -4,25 +4,25 @@ $(document).ready(function(){
  
 var crystal1, crystal2, crystal3, crystal4
 
-// The player will be shown a random number at the start of the game.
+// The player will be shown a random number at the start of the game btwn 19-120
 
-function randomNumber() {
+// function randomNumber() {
     var random = Math.floor(Math.random() * 120) + 19; 
     return random
-}
+
 
 // When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
 
 //onClick Event when crystal is clicked, no. of points is updated in html
 
 $("#ruby").click(function() {
-    console.log(this); 
+    console.log(Math.floor(Math.random() * 12) + 1); 
 
 });
 
 //create var to hold total score *create a new random number (loop?) for each image
 
-
+var totalScore
 
 
 // Your game will hide this amount until the player clicks a crystal.
