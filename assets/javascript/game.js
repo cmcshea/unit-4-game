@@ -1,5 +1,4 @@
 $(document).ready(function(){
-// Option 1 Game design notes
 
 // There will be four crystals displayed as buttons on the page.
  
@@ -17,9 +16,12 @@ function randomNumber() {
 //onClick Event when crystal is clicked, no. of points is updated in html
 
 $("#ruby").click(function() {
-    console.log(this); //create var to hold total score *create a new random number (loop?) for each image
+    console.log(this); 
 
 });
+
+//create var to hold total score *create a new random number (loop?) for each image
+
 
 
 
