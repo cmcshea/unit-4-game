@@ -12,6 +12,14 @@ function randomNumber() {
     return random
 }
 
+function gemRandomNumber() {
+    var gemRandom = Math.floor(Math.random() * 12) + 1;
+    return gemRandom
+}
+
+var gemNumber = gemRandomNumber();
+$("#score").html(gemNumber);
+
 // When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
 
 //onClick Event when crystal is clicked, no. of points is updated in html
