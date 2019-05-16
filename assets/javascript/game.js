@@ -17,7 +17,7 @@ function randomNumber() {
 //onClick Event when crystal is clicked, no. of points is updated in html
 
 
-$("#ruby").click(function() {
+$("#gem1").click(function() {
     
    console.log((Math.floor(Math.random() * 12) + 1)); 
 
