@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 var crystal1, crystal2, crystal3, crystal4
 
+
 // The player will be shown a random number at the start of the game btwn 19-120
 
 function randomNumber() {
@@ -31,6 +32,23 @@ $("#gem1").click(function() {
 
 });
 
+$("#gem2").click(function() {
+    
+    console.log((Math.floor(Math.random() * 12) + 1)); 
+ 
+ });
+
+ $("#gem3").click(function() {
+    
+    console.log((Math.floor(Math.random() * 12) + 1)); 
+ 
+ });
+
+ $("#gem4").click(function() {
+    
+    console.log((Math.floor(Math.random() * 12) + 1)); 
+ 
+ });
 //create var to hold total score *create a new random number (loop?) for each image
 
 var targetNumber = randomNumber();
@@ -61,9 +79,7 @@ var playerScore =
 
 // When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
 
-var counter = 0;
-var wins = 0;
-var losses = 0;
+
 
     //setupnewRound - reset to 0, new randomNumber
 
