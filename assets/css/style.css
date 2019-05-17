@@ -1,3 +1,56 @@
-.images {   
+
+* {
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background-image: url("https://image.shutterstock.com/image-illustration/blue-white-luxury-focus-blur-260nw-1303091866.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    border: 2px solid black;
+}
+
+#header {
+    padding-top: 30px;
+    margin-top: 10px;
+    color: white;
+    height: 100%;
+    width: 240px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    height: 80px;
+    background: orange;
+}
+
+#instructions {
+    padding-top: 30px;
+    padding-bottom: 60px;   
+    color: green;
+    height: 100%;
+    width: 100%;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 14px;
+    background: papayawhip;
+
+
+}
+
+/* #target{
+
+} */
+
+.gems {   
     margin: 10px;
 }
