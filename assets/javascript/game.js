@@ -102,7 +102,7 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
 
-    function start () {
+    function Start () {
         targetNumber = randomNumber();
         $("#target").text(targetNumber);
         score = 0;
@@ -114,7 +114,7 @@ $(document).ready(function () {
         $("#gem4").val(gemRandomNumber);
 
     }
-    start();
+    Start();
 
 
     $(".gem").on("click", function(){
@@ -123,6 +123,16 @@ $(document).ready(function () {
         score = score + parseInt(gem.val());
 
         $("#score").html(score);
+
+        if (score > targetNumber) {
+            losses++;
+            $("#losses").html(losses);
+            Start();
+        } else if (score === targetNumber) {
+            wins++;
+            $("#wins").html(wins);
+            Start();
+        }
 
 
     })
